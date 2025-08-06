@@ -6,7 +6,7 @@ import com.vanju.module.analyzer.controller.transStation.vo.TransformerSubstatio
 import com.vanju.module.analyzer.controller.transStation.vo.TransformerSubstationRespVO;
 import com.vanju.module.analyzer.controller.transStation.vo.TransformerSubstationSaveReqVO;
 import com.vanju.module.analyzer.controller.transStation.vo.TransformerSubstationSimpleRespVO;
-import com.vanju.module.analyzer.dal.dataobject.scd.DeviceDO;
+
 import com.vanju.module.analyzer.dal.dataobject.scd.ScdCurrentModelDO;
 import com.vanju.module.analyzer.dal.dataobject.transStation.TransformerSubstationDO;
 import com.vanju.module.analyzer.enums.SCDFileEnum;
@@ -35,20 +35,20 @@ public class TransformerSubstationController {
     private TransformerSubstationService transformerSubstationService;
 
     @Operation(summary = "创建变电站树结构")
-    @PostMapping(path = "create", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public CommonResult<Long> createTransformerSubstation(@RequestPart("createReqVO") @Valid TransformerSubstationSaveReqVO createReqVO) {
-        Long TransformerSubstationId = transformerSubstationService.createTransformerSubstation(createReqVO);
-        return success(TransformerSubstationId);
+    @PostMapping(path = "/create", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public CommonResult<Long> createTransformerSubstation(@Valid @ModelAttribute TransformerSubstationSaveReqVO createReqVO) {
+        Long transformerSubstationId = transformerSubstationService.createTransformerSubstation(createReqVO);
+        return success(transformerSubstationId);
     }
 
-    @PutMapping("update")
+    @PutMapping(path = "/update", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @Operation(summary = "更新站")
-    public CommonResult<Boolean> updateTransformerSubstation(@Valid @RequestBody TransformerSubstationSaveReqVO updateReqVO) {
+    public CommonResult<Boolean> updateTransformerSubstation(@Valid @ModelAttribute TransformerSubstationSaveReqVO updateReqVO) {
         transformerSubstationService.updateTransformerSubstation(updateReqVO);
         return success(true);
     }
 
-    @DeleteMapping("delete")
+    @DeleteMapping("/delete")
     @Operation(summary = "删除站")
     @Parameter(name = "id", description = "编号", required = true, example = "1024")
     public CommonResult<Boolean> deleteTransformerSubstation(@RequestParam("id") Long id) {
