@@ -80,7 +80,7 @@ public class TransformerSubstationController {
 
     @GetMapping("/selectStaDev")
     @Operation(summary = "获得站的装置信息")
-    @Parameter(name = "id", description = "编号", required = true, example = "1024")
+    @Parameter(name = "stationId", description = "编号", required = true, example = "1024")
     public CommonResult<List<ScdCurrentModelDO>> selectStaDev(@RequestParam("stationId") String station_id) {
         return success(transformerSubstationService.selectDevListData(station_id));
     }
