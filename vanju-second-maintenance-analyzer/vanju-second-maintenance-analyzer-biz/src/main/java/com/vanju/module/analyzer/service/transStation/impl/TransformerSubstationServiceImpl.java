@@ -58,7 +58,7 @@ public class TransformerSubstationServiceImpl implements TransformerSubstationSe
     @Autowired
     ScdCurrentModelMapper scdCurrentModelMapper;
 
-    @Resource
+    @Resource // 注入文件服务，用于上传SCD文件
     FileApi fileApi;
 
     @Override
