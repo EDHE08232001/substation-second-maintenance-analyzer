@@ -1,0 +1,13 @@
+com/vanju/framework/datapermission/core/rule/dept/DeptDataPermissionRuleCustomizer.class
+com/vanju/framework/datapermission/config/VanjuDeptDataPermissionAutoConfiguration.class
+com/vanju/framework/datapermission/core/rule/dept/DeptDataPermissionRule.class
+com/vanju/framework/datapermission/core/rule/DataPermissionRule.class
+com/vanju/framework/datapermission/core/aop/DataPermissionAnnotationAdvisor.class
+com/vanju/framework/datapermission/core/rule/DataPermissionRuleFactory.class
+com/vanju/framework/datapermission/core/aop/DataPermissionAnnotationInterceptor.class
+com/vanju/framework/datapermission/core/aop/DataPermissionContextHolder.class
+com/vanju/framework/datapermission/core/rule/DataPermissionRuleFactoryImpl.class
+com/vanju/framework/datapermission/core/db/DataPermissionRuleHandler.class
+com/vanju/framework/datapermission/core/util/DataPermissionUtils.class
+com/vanju/framework/datapermission/config/VanjuDataPermissionAutoConfiguration.class
+com/vanju/framework/datapermission/core/annotation/DataPermission.class

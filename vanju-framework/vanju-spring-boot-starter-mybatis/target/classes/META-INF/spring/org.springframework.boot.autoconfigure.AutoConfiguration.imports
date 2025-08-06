@@ -1,0 +1,2 @@
+com.vanju.framework.mybatis.config.VanjuMybatisAutoConfiguration
+com.vanju.framework.translate.config.VanjuTranslateAutoConfiguration

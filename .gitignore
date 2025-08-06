@@ -1,0 +1,57 @@
+# Ignore compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+
+# Ignore IDE specific files
+/.idea/
+/.vscode/
+/*.iml
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
+._*
+
+# Ignore Maven and Gradle build directories
+/target/
+/build/
+
+# Ignore node_modules (if using Node.js)
+node_modules/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore package-lock.json (if using npm)
+package-lock.json
+
+# Ignore environment files
+.env
+
+# No media files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+*.mkv
+
+# No log files
+*.log
+*.out

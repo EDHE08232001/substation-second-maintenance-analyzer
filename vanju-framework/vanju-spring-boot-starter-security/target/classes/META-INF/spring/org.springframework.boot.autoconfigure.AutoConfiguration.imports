@@ -1,0 +1,3 @@
+com.vanju.framework.security.config.VanjuSecurityAutoConfiguration
+com.vanju.framework.security.config.VanjuWebSecurityConfigurerAdapter
+com.vanju.framework.operatelog.config.VanjuOperateLogConfiguration

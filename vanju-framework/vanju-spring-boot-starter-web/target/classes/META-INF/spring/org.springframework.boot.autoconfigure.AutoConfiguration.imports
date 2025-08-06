@@ -1,0 +1,6 @@
+com.vanju.framework.apilog.config.VanjuApiLogAutoConfiguration
+com.vanju.framework.jackson.config.VanjuJacksonAutoConfiguration
+com.vanju.framework.swagger.config.VanjuSwaggerAutoConfiguration
+com.vanju.framework.web.config.VanjuWebAutoConfiguration
+com.vanju.framework.xss.config.VanjuXssAutoConfiguration
+com.vanju.framework.banner.config.VanjuBannerAutoConfiguration

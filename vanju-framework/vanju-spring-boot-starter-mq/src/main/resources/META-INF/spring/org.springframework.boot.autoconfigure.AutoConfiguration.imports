@@ -1,0 +1,3 @@
+com.vanju.framework.mq.redis.config.VanjuRedisMQProducerAutoConfiguration
+com.vanju.framework.mq.redis.config.VanjuRedisMQConsumerAutoConfiguration
+com.vanju.framework.mq.rabbitmq.config.VanjuRabbitMQAutoConfiguration

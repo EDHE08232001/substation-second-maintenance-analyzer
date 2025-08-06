@@ -1,0 +1,24 @@
+{
+  "groups": [
+    {
+      "name": "vanju.websocket",
+      "type": "com.vanju.framework.websocket.config.WebSocketProperties",
+      "sourceType": "com.vanju.framework.websocket.config.WebSocketProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "vanju.websocket.path",
+      "type": "java.lang.String",
+      "description": "WebSocket 的连接路径",
+      "sourceType": "com.vanju.framework.websocket.config.WebSocketProperties"
+    },
+    {
+      "name": "vanju.websocket.sender-type",
+      "type": "java.lang.String",
+      "description": "消息发送器的类型 可选值：local、redis、rocketmq、kafka、rabbitmq",
+      "sourceType": "com.vanju.framework.websocket.config.WebSocketProperties"
+    }
+  ],
+  "hints": []
+}

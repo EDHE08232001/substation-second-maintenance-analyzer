@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.vanju.boot</groupId>
+        <artifactId>vanju-framework</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>vanju-spring-boot-starter-biz-data-permission</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>数据权限</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.vanju.boot</groupId>
+            <artifactId>vanju-common</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.vanju.boot</groupId>
+            <artifactId>vanju-spring-boot-starter-security</artifactId>
+            <version>${revision}</version>
+            <optional>true</optional> <!-- 可选，如果使用 DeptDataPermissionRule 必须提供 -->
+        </dependency>
+
+        <!-- DB 相关 -->
+        <dependency>
+            <groupId>com.vanju.boot</groupId>
+            <artifactId>vanju-spring-boot-starter-mybatis</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <dependency>
+            <groupId>com.vanju.boot</groupId>
+            <artifactId>vanju-module-system-api</artifactId> <!-- 需要使用它，进行数据权限的获取 -->
+            <version>${revision}</version>
+        </dependency>
+    </dependencies>
+</project>

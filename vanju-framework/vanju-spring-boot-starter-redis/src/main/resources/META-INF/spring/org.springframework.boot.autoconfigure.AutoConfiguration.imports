@@ -1,0 +1,2 @@
+com.vanju.framework.redis.config.VanjuRedisAutoConfiguration
+com.vanju.framework.redis.config.VanjuCacheAutoConfiguration

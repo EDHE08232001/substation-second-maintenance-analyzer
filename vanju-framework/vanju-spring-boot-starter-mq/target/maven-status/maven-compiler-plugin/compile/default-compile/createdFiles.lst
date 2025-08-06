@@ -1,0 +1,11 @@
+com/vanju/framework/mq/rabbitmq/config/VanjuRabbitMQAutoConfiguration.class
+com/vanju/framework/mq/redis/core/RedisMQTemplate.class
+com/vanju/framework/mq/redis/core/message/AbstractRedisMessage.class
+com/vanju/framework/mq/redis/core/pubsub/AbstractRedisChannelMessageListener.class
+com/vanju/framework/mq/redis/core/stream/AbstractRedisStreamMessageListener.class
+com/vanju/framework/mq/redis/core/interceptor/RedisMessageInterceptor.class
+com/vanju/framework/mq/redis/core/pubsub/AbstractRedisChannelMessage.class
+com/vanju/framework/mq/redis/core/job/RedisPendingMessageResendJob.class
+com/vanju/framework/mq/redis/core/stream/AbstractRedisStreamMessage.class
+com/vanju/framework/mq/redis/config/VanjuRedisMQProducerAutoConfiguration.class
+com/vanju/framework/mq/redis/config/VanjuRedisMQConsumerAutoConfiguration.class

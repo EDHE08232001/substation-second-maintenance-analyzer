@@ -1,0 +1,100 @@
+{
+  "groups": [
+    {
+      "name": "vanju.swagger",
+      "type": "com.vanju.framework.swagger.config.SwaggerProperties",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.web",
+      "type": "com.vanju.framework.web.config.WebProperties",
+      "sourceType": "com.vanju.framework.web.config.WebProperties"
+    },
+    {
+      "name": "vanju.web.admin-api",
+      "type": "com.vanju.framework.web.config.WebProperties$Api",
+      "sourceType": "com.vanju.framework.web.config.WebProperties",
+      "sourceMethod": "public com.vanju.framework.web.config.WebProperties.Api getAdminApi() "
+    },
+    {
+      "name": "vanju.xss",
+      "type": "com.vanju.framework.xss.config.XssProperties",
+      "sourceType": "com.vanju.framework.xss.config.XssProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "vanju.swagger.author",
+      "type": "java.lang.String",
+      "description": "作者",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.swagger.description",
+      "type": "java.lang.String",
+      "description": "描述",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.swagger.email",
+      "type": "java.lang.String",
+      "description": "email",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.swagger.license",
+      "type": "java.lang.String",
+      "description": "license",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.swagger.license-url",
+      "type": "java.lang.String",
+      "description": "license-url",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.swagger.title",
+      "type": "java.lang.String",
+      "description": "标题",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.swagger.url",
+      "type": "java.lang.String",
+      "description": "url",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.swagger.version",
+      "type": "java.lang.String",
+      "description": "版本",
+      "sourceType": "com.vanju.framework.swagger.config.SwaggerProperties"
+    },
+    {
+      "name": "vanju.web.admin-api.controller",
+      "type": "java.lang.String",
+      "description": "Controller 所在包的 Ant 路径规则 <p> 主要目的是，给该 Controller 设置指定的 {@link #prefix}",
+      "sourceType": "com.vanju.framework.web.config.WebProperties$Api"
+    },
+    {
+      "name": "vanju.web.admin-api.prefix",
+      "type": "java.lang.String",
+      "description": "API 前缀，实现所有 Controller 提供的 RESTFul API 的统一前缀 <p> <p> 意义：通过该前缀，避免 Swagger、Actuator 意外通过 Nginx 暴露出来给外部，带来安全性问题 这样，Nginx 只需要配置转发到 \/api\/* 的所有接口即可。 @see VanjuWebAutoConfiguration#configurePathMatch(PathMatchConfigurer)",
+      "sourceType": "com.vanju.framework.web.config.WebProperties$Api"
+    },
+    {
+      "name": "vanju.xss.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启，默认为 true",
+      "sourceType": "com.vanju.framework.xss.config.XssProperties"
+    },
+    {
+      "name": "vanju.xss.exclude-urls",
+      "type": "java.util.List<java.lang.String>",
+      "description": "需要排除的 URL，默认为空",
+      "sourceType": "com.vanju.framework.xss.config.XssProperties"
+    }
+  ],
+  "hints": []
+}

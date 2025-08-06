@@ -1,0 +1,14 @@
+package com.vanju.module.analyzer.dal.mysql.publicHandle;
+
+
+import com.baomidou.mybatisplus.annotation.InterceptorIgnore;
+import com.vanju.framework.mybatis.core.mapper.BaseMapperX;
+import com.vanju.module.analyzer.dal.dataobject.publicHandle.ScdConstantDO;
+import com.vanju.module.analyzer.dal.dataobject.scd.ScdCurrentInfoDO;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+@InterceptorIgnore(tenantLine = "true")
+public interface ScdConstantMapper extends BaseMapperX<ScdConstantDO> {
+
+}

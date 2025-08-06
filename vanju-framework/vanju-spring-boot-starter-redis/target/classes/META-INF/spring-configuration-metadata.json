@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "vanju.cache",
+      "type": "com.vanju.framework.redis.config.VanjuCacheProperties",
+      "sourceType": "com.vanju.framework.redis.config.VanjuCacheProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "vanju.cache.redis-scan-batch-size",
+      "type": "java.lang.Integer",
+      "description": "redis scan 一次返回数量",
+      "sourceType": "com.vanju.framework.redis.config.VanjuCacheProperties"
+    }
+  ],
+  "hints": []
+}
